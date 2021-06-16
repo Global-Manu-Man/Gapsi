@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Jun 16 12:52:04 CDT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017a-15f3-99e9-000007cfaed0 
+on database directory memory:D:\API REST\WalmartAPI\f860e89e-ea7e-4d23-8ddd-c479252a379d with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Users/Admin/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.14.2.0/7efad40ef52fbb1f08142f07a83b42d29e47d8ce/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_281-b09
+user.dir=D:\API REST\WalmartAPI
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
