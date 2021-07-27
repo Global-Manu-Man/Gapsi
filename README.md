@@ -83,12 +83,12 @@
     primary key (id)
     );
     
--- insert data
+-- Insert data into store table
 
     insert into `store` (`id`, `name`, `description`, `rate`, `model`) VALUES ( '1','Producto1', 'descripcion', '12', 'modelo');
     
 
--- consult table store
+-- consult table store;
    
     mysql> select * from store;
    
