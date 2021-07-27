@@ -89,7 +89,7 @@
     2 rows in set (0.00 sec)
     
     
-    ![image](https://user-images.githubusercontent.com/84020431/127106515-59aa897f-c55d-4d5a-8af9-a463e59de5f5.png)
+![image](https://user-images.githubusercontent.com/84020431/127106515-59aa897f-c55d-4d5a-8af9-a463e59de5f5.png)
 
     
     
