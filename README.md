@@ -87,7 +87,8 @@
     |  2 | Producto2 | descripcion | 4    | modelo x |
     +----+-----------+-------------+------+----------+
     2 rows in set (0.00 sec)
-    
+
+--Test the API    
     
 ![image](https://user-images.githubusercontent.com/84020431/127106515-59aa897f-c55d-4d5a-8af9-a463e59de5f5.png)
 
