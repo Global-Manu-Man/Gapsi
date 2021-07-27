@@ -88,9 +88,14 @@
     +----+-----------+-------------+------+----------+
     2 rows in set (0.00 sec)
 
---Test the API    
+--API test with Google Chrome.   
     
 ![image](https://user-images.githubusercontent.com/84020431/127106515-59aa897f-c55d-4d5a-8af9-a463e59de5f5.png)
+
+--API test with Postman
+
+![image](https://user-images.githubusercontent.com/84020431/127107092-c4c2b0cf-995f-4116-a5d9-4256d06de469.png)
+
 
     
     
