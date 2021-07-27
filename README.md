@@ -6,15 +6,11 @@
 -- Server version	8.0.0-dmr-log
 
 -- Create user and password
-      
-    create user 'root'@'%' identified by 'root';
     
     mysql> create user 'root'@'%' identified by 'root';
     Query OK, 0 rows affected (0.02 sec)
 
 -- Show users
-
-    show grants for 'root';
     
     mysql> show grants for 'root';
     +----------------------------------+
@@ -25,8 +21,6 @@
     1 row in set (0.00 sec)
 
 -- Validate all users; 
-
-    select user FROM mysql.user;
     
     mysql> select user FROM mysql.user;
      +------------------+
@@ -45,28 +39,21 @@
     
 -- Gives all privileges to the new user on the newly create database.    
 
-    grant all on users.* to 'root'@'%';
     
     mysql> grant all on users.* to 'root'@'%';
     Query OK, 0 rows affected (0.02 sec)
     
 -- Create database bd_store;
-
-    create database bd_store;
     
     mysql> create database bd_store; -- Create database bdstore;
     Query OK, 1 row affected (0.01 sec)
     
 -- User database bdstore.      
-
-    USE bd_store;
     
     mysql> USE bd_store; -- User database bdstore.
     Database changed
     
---
--- Dumping data for table `bd_store`
---
+
 
 -- Delete in table bd_store.
 
@@ -85,7 +72,8 @@
     
 -- Insert data into store table
 
-    insert into `store` (`id`, `name`, `description`, `rate`, `model`) VALUES ( '1','Producto1', 'descripcion', '12', 'modelo');
+    insert into `store` (`name`, `description`, `rate`, `model`) VALUES ( 'Producto1', 'descripcion', '12', 'modelo');
+    insert into `store` (`name`, `description`, `rate`, `model`) VALUES ( 'Producto2', 'descripcion', '4',  'modelo');
     
 
 -- consult table store;
