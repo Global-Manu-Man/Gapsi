@@ -3,7 +3,18 @@ package com.example.gradle.repository;
 import com.example.gradle.entitys.store;
 import org.springframework.data.repository.CrudRepository;
 
-public interface repository extends CrudRepository<store, Long> {
+import java.util.List;
 
-    store findByName(String name);
+public interface repository extends CrudRepository<store, String> {
+
+    store findByName(String id);
+
+    // Método para guardar una nueva entidad
+    store save(store entity);
+
+    // Método para eliminar una entidad por su ID
+    void deleteById(Long id);
+
+    List<store> findAll();
+
 }
