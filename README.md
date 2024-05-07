@@ -47,7 +47,8 @@
    mysql> show databases;
      +--------------------+
      | Database           |
-     +--------------------+           |
+     +--------------------+
+     | bd_gapsi           |
      | bd_store           |
      | information_schema |
      | locallity          |
@@ -56,8 +57,7 @@
      | publications       |
      | sys                |
      +--------------------+
-7 rows in set (0.01 sec)
-
+     8 rows in set (0.00 sec)
     
 -- Create database bd_gapsi;
     
@@ -103,8 +103,8 @@
     
 -- Insert data into store table
 
-    insert into `store` (`name`, `description`, `rate`, `model`) VALUES ( 'Producto1', 'descripcion', '12', 'modelo');
-    insert into `store` (`name`, `description`, `rate`, `model`) VALUES ( 'Producto2', 'descripcion', '4',  'modelo');
+    insert into `store` (`name`, `description`, `rate`, `model`) VALUES ( 'Producto1', 'descripcion', '4beccf9f-c316-40df-8d06-bdd1aa64bfd2', 'modelo');
+    insert into `store` (`name`, `description`, `rate`, `model`) VALUES ( 'Producto2', 'descripcion', '8994946d-d817-4b07-8a62-ff059e45750f',  'modelo');
 
 
 
