@@ -42,6 +42,25 @@
     
     mysql> grant all on users.* to 'root'@'%';
     Query OK, 0 rows affected (0.02 sec)
+
+-- See all databases.
+    mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| bd_store           |
+| information_schema |
+| locallity          |
+| mysql              |
+| performance_schema |
+| publications       |
+| sys                |
++--------------------+
+7 rows in set (0.01 sec)
+
+
+mysql> use bd_store
+Database changed
     
 -- Create database bd_store;
     
