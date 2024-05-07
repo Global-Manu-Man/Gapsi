@@ -44,68 +44,85 @@
     Query OK, 0 rows affected (0.02 sec)
 
 -- See all databases.
-    mysql> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| bd_store           |
-| information_schema |
-| locallity          |
-| mysql              |
-| performance_schema |
-| publications       |
-| sys                |
-+--------------------+
+   mysql> show databases;
+     +--------------------+
+     | Database           |
+     +--------------------+           |
+     | bd_store           |
+     | information_schema |
+     | locallity          |
+     | mysql              |
+     | performance_schema |
+     | publications       |
+     | sys                |
+     +--------------------+
 7 rows in set (0.01 sec)
 
-
-mysql> use bd_store
-Database changed
     
--- Create database bd_store;
+-- Create database bd_gapsi;
     
-    mysql> create database bd_store; -- Create database bdstore;
+    mysql> create database bd_gapsi; -- Create database bd_gapsi;
     Query OK, 1 row affected (0.01 sec)
     
--- User database bdstore.      
+-- User database bd_gapsi.      
     
-    mysql> USE bd_store; -- User database bdstore.
+    mysql> USE bd_gapsi; -- User database bd_gapsi.
     Database changed
-    
-
-
--- Delete in table bd_store.
-
-    drop table  if exists `bd_store`; 
 
 -- Create table store;    
     
     create table store (   
-    id bigint(10) not null auto_increment,
-    name varchar(30) not null,
-    description varchar(30) not null,
-    rate varchar(30) not null,
-    model varchar(30) null,
+    id varchar(100) not null,
+    name varchar(255) not null,
+    description varchar(255) not null,
+    rate varchar(255) not null,
+    model varchar(255) null,
     primary key (id)
     );
+
+
+
+    mysql> desc store;
+     +-------------+--------------+------+-----+---------+-------+
+     | Field       | Type         | Null | Key | Default | Extra |
+     +-------------+--------------+------+-----+---------+-------+
+     | id          | varchar(100) | NO   | PRI | NULL    |       |
+     | description | varchar(255) | YES  |     | NULL    |       |
+     | model       | varchar(255) | YES  |     | NULL    |       |
+     | name        | varchar(255) | YES  |     | NULL    |       |
+     | rate        | int          | YES  |     | NULL    |       |
+     +-------------+--------------+------+-----+---------+-------+
+     5 rows in set (0.01 sec)
+    
+
+-- Delete in table bd_store.
+
+    drop table  if exists `store`; 
+
+
     
 -- Insert data into store table
 
     insert into `store` (`name`, `description`, `rate`, `model`) VALUES ( 'Producto1', 'descripcion', '12', 'modelo');
     insert into `store` (`name`, `description`, `rate`, `model`) VALUES ( 'Producto2', 'descripcion', '4',  'modelo');
-    
+
+
 
 -- consult table store;
    
     mysql> select * from store;
-   
-    +----+-----------+-------------+------+----------+
-    | id | name      | description | rate | model    |
-    +----+-----------+-------------+------+----------+
-    |  1 | Producto1 | descripcion | 12   | modelo y |
-    |  2 | Producto2 | descripcion | 4    | modelo x |
-    +----+-----------+-------------+------+----------+
-    2 rows in set (0.00 sec)
+
+     +--------------------------------------+-------------+-------+------+------+
+     | id                                   | description | model | name | rate |
+     +--------------------------------------+-------------+-------+------+------+
+     | 4beccf9f-c316-40df-8d06-bdd1aa64bfd2 | description | model | name |   12 |
+     | 8994946d-d817-4b07-8a62-ff059e45750f | description | model | name |   12 |
+     | aaafdff6-7e98-4887-ac86-60ce57d48fea | description | model | name |   12 |
+     | b180e4a7-aa7a-42c6-bf12-cf51163bc0fa | description | model | name |   12 |
+     | eb743060-3bf5-4da0-94d6-f1cbb2f0a97c | description | model | name |   12 |
+     +--------------------------------------+-------------+-------+------+------+
+     5 rows in set (0.02 sec)
+
 
 --API test with Google Chrome.   
     
