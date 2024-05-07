@@ -66,7 +66,6 @@ We transform ideas into exceptional digital experiences. Your user-centered web 
     +--------------------+
      | Database           |
      +--------------------+
-     | bd_gapsi           |
      | bd_store           |
      | information_schema |
      | locallity          |
